@@ -3,7 +3,6 @@ from tkinter import *
 from tkinter import Label
 from tkinter import Button
 import requests as re
-from decimal import Decimal
 
 # Create a function that will help extract,open, read,and display the current weather condition from servers
 
@@ -31,7 +30,7 @@ def weather():
     # Inserting text to our labels we now configure our GUI
     weather_condition_label.config(text="Weather Condition : " + weather_condition)
     # float("{:.2f}".format(x))
-    temp_condition_label.config(text="Temperature : " + str((temperature - 273))) 
+    temp_condition_label.config(text="Temperature : " + str((temperature - 273)) + " °C") 
     humidity_condition_label.config(text="Humidity : " + str(humidity) + " %")
     wind_speed_condition_label.config(text="Wind Speed : " + str(wind_speed) + " Mtrs/Sec")
 

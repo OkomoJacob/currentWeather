@@ -4,20 +4,16 @@ from tkinter import Label
 from tkinter import Button
 import requests
 
-# Create a function that will help extract,open, read,and display the current weather condition
-# This is the start of the API Part
-
+# Create a function that will help extract,open, read,and display the current weather condition from servers
 
 def weather():
     # This city variable will extract the name of the city input by the user from the city list box.
     city = city_listbox.get()
     """
-    This must be further formatted into sth readable and be able to take the city from the user
-    # initial link :"https://openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22"
     # Openweather API recommends calling API by city id to avoid ambiguous results which will be unfriendly to the end user
     # api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
     """
-    url = "https://api.openweathermap.org/data/2.5/weather?q={}&appid=29121a023e33e236dd1ea61e5cffc77d".format(city)
+    url = "https://api.openweathermap.org/data/2.5/weather?q={}&appid=PASTE YOUR openweathermap API ID HERE".format(city)
 
     # a request function that will get the data from the above url
     res = requests.get(url)

@@ -12,6 +12,8 @@ The following are the basic requirements to fully achieve the aim of this projec
 - Then, go to the `url = "https://api.openweathermap...` line and paste your API key there towards the end of that line as indicated, just before `.format()`.
 - Once it is through without any errors, run `python main.py` or `python3 main.py` depending on the python versin you're using.
 - upon running the code, you'll see an image like the one labelled `selectCity.png`
+  <img src=“outputs/selectCity.png” raw=true alt=“SelectCity.png” />
+
 - Click the `select the city` button, from the drop down , you'll see cities to view their weather and click `RUN` button.
 - You'll see and image like the one labeled `results.png`
 

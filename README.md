@@ -20,7 +20,7 @@ the code—I would be grateful if you could report this to me via [mail](jaylabs
 save others from frustration and help me improve subsequent versions of this mini-project and related works. 
 
 
-#### Getting Help
+#### Getting Further Help
 One of the greatest benefits of python is its great kind and helpful user community.
 For help with any aspect of related to python - from installation, to application design, to
 to deployment - feel free to ask questions online.

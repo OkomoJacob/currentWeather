@@ -1,13 +1,1 @@
-
-def weather():
-    # city = city
-
-    url = "https://openweathermap.org/data/2.5/weather?q={}&appid=b6907d289e10d714a6e88b30761fae22".format(city)
-
-    res = requests.get(url)
-    output = res.json()
-
-    weather_condition = output['weather'][0]['description']
-    temperature = output['main']['temp']
-    humidity = output['main']['humid']
-    wind_Speed = output['wind'][0]['speed']
+API = 29121a023e33e236dd1ea61e5cffc77d

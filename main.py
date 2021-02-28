@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import Label
 from tkinter import Button
 import requests as re
+from decimal import Decimal
 
 # Create a function that will help extract,open, read,and display the current weather condition from servers
 
@@ -30,9 +31,9 @@ def weather():
     # Inserting text to our labels we now configure our GUI
     weather_condition_label.config(text="Weather Condition : " + weather_condition)
     # float("{:.2f}".format(x))
-    temp_condition_label.config(text="Temperature : " + str(temperature - 273).format("{:.3f}")) 
-    humidity_condition_label.config(text="Humidity : " + str(humidity))
-    wind_speed_condition_label.config(text="Wind Speed : " + str(wind_speed))
+    temp_condition_label.config(text="Temperature : " + str((temperature - 273))) 
+    humidity_condition_label.config(text="Humidity : " + str(humidity) + " %")
+    wind_speed_condition_label.config(text="Wind Speed : " + str(wind_speed) + " Mtrs/Sec")
 
 # create a tkinter GUI window, from where the user will interact with the APP
 
@@ -49,17 +50,13 @@ city_listbox = StringVar(window)
 # We are now telling our Tkinter window to enable us to toggle btn the cities to choose from
 city_listbox.set("Select the city")
 
-# For the list box to show up, we need to declare another variable that gives us that option and takes
-# the window parameters as below:
 option = OptionMenu(window, city_listbox, *city_names_list)
-# we are now showing these variables/options in our tkinter window as in grid format
+# positioning variables/options in our tkinter window
 
 option.grid(row=2, column=2, padx=150, pady=10)
-# Now lets create our select button
+# Creating our select button, command is the action triggered which is our weather()
 b1 = Button(window, text="RUN", fg="green", width=15, command=weather)
 
-# Command is the action triggered which is our weather()
-# create a grid of boxes
 b1.grid(row=5, column=2, padx=150, pady=0)
 # Create your labels of our window for display for the user GUI
 

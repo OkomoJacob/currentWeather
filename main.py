@@ -14,7 +14,7 @@ def weather():
     # Openweather API recommends calling API by city id to avoid ambiguous results which will be unfriendly to the end user
     # api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
     """
-    url = "https://api.openweathermap.org/data/2.5/weather?q={}&appid=29121a023e33e236dd1ea61e5cffc77d".format(city)
+    url = "https://api.openweathermap.org/data/2.5/weather?q={}&appid=PASTE_YOUR_API_KEY_HERE".format(city)
 
     #From requests module, use .get() function that takes url as the variable to request the data from the above url
     res = re.get(url)
